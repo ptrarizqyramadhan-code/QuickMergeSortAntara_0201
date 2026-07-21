@@ -104,3 +104,27 @@ void output()
     cout << "Jumlah Pergerakan data : " << mov_count << endl; // menampilkan jumlah pergerakan data
 
 }
+
+int main ()
+{
+    char ch;
+
+    do
+    {
+        input();
+        quicksort(0, n - 1);
+        output();
+
+        cout << "\nIngin melanjutkan? (y/n) : ";
+        cin >> ch;
+        if (ch == 't' || ch == 'T')
+        {
+            break;
+        }
+        system("pause");
+        system("cls");
+    } while (true);
+    return 0;
+
+    
+}
