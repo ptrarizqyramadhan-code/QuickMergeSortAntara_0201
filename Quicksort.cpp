@@ -87,3 +87,20 @@ void quicksort(int low,int high)
     quicksort(j + 1, high); // memanggil fungsi quicksort dengan parameter j + 1 dan high
 
 }
+
+void output()
+{
+    cout << "\n------------------------" << endl;// display untuk menampilkan keterangan element array yang telah di urutkan 
+    cout << "\nInputkan Isi element array" << endl;
+    cout << "\n------------------------" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << endl;
+    }
+
+    cout << "\nJumlah Perbandingan : " << cmp_count << endl; // menampilkan jumlah perbandingan didalam algoritma
+
+    cout << "Jumlah Pergerakan data : " << mov_count << endl; // menampilkan jumlah pergerakan data
+
+}
