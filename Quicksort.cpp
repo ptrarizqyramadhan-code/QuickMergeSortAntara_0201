@@ -31,3 +31,23 @@ void input()
         cin >> arr[i];
     }
 }
+
+void swap(int x, int y)
+{
+    int temp = arr [x];
+
+    arr[x] = arr[y];
+    arr[y] = temp;
+    mov_count++;
+}
+
+void quicksort(int low,int high)
+{
+    int temp;
+    int pivot, i, j; // inisialisasi variabel pivot, i,dan j
+
+    if (low > high) // jika low lebih besar dari high 
+    {
+        return; // untuk mengembalikan nilai
+
+    }
